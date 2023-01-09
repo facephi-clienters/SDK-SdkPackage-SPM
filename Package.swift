@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "CorePackage", url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", from: "1.0.0"),
+        .package(name: "SDK-CorePackage-SPM", url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", from: "1.0.0"),
         .package(url: "https://github.com/facephi-clienters/SDK-LicensingPackage-SPM.git", from: "1.0.0")
     ],
     targets: [
@@ -22,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SDK-SdkPackage-SPM",
-            dependencies: ["CorePackage", "sdk", "SDK-LicensingPackage-SPM" ]),
+            dependencies: ["SDK-CorePackage-SPM", "sdk", "SDK-LicensingPackage-SPM" ]),
         .binaryTarget(name: "sdk", path: "sdk.xcframework"),
        
     ]
