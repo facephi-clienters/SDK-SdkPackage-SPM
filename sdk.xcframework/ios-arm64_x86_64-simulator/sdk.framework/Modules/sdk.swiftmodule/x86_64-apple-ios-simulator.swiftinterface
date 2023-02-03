@@ -5,7 +5,7 @@ import Foundation
 import Swift
 import _Concurrency
 import core
-import licensing_component
+import licensingComponent
 public class SDKController {
   public var license: Swift.String
   public init()
@@ -17,6 +17,7 @@ public class SDKController {
   public func initPhingersController(_ phingersController: core.IPhingersController)
   public func initVideoIdController(_ videoIdController: core.IVideoIdController)
   public func initQrReaderController(_ qrController: core.IQrReaderController)
+  public func initTokenizeController(_ tokenizeController: core.ITokenizeController)
   @objc deinit
 }
 extension sdk.SDKController : core.ISDKController {
@@ -40,8 +41,10 @@ extension sdk.SDKController : core.ISDKController {
   public func operationSuccessTrackingEvent()
   public func cancelReadNfcData()
   public func generateRawTemplate(base64: Swift.String) -> core.SdkResult<Foundation.Data>
-  public func tokenize(data: Swift.String) -> core.SdkResult<Swift.String>
-  public func extraData(trackingConfigurationData: core.TrackingConfigurationData, completion: (core.SdkResult<Swift.String>) -> ())
+  public func selphidTokenize(data: Swift.String) -> core.SdkResult<Swift.String>
+  public func getSelphidExtraData(trackingConfigurationData: core.TrackingConfigurationData) -> core.SdkResult<Swift.String>
+  public func getExtraData(trackingConfigurationData: core.TrackingConfigurationData, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func tokenizeFaceImage(image: Foundation.Data, output: @escaping (core.SdkResult<Swift.String>) -> ())
   public func externalTrackingEvent(trackingData: core.TrackingData) -> core.SdkResult<Swift.String>
   public func setCustomerId(customerId: Swift.String) -> core.SdkResult<Swift.String>
   public func closeSession() -> core.SdkResult<Swift.String>
