@@ -14,8 +14,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "SDK-CorePackage-SPM", url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", from: "1.0.0"),
-        .package(url: "https://github.com/facephi-clienters/SDK-LicensingPackage-SPM.git", from: "1.0.0")
+        .package(name: "SDK-CorePackage-SPM", url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", from: "1.1.0"),
+        .package(url: "https://github.com/facephi-clienters/SDK-LicensingPackage-SPM.git", from: "1.1.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
