@@ -18,6 +18,10 @@ public class SDKController {
   public func initVideoIdController(_ videoIdController: core.IVideoIdController)
   public func initQrReaderController(_ qrController: core.IQrReaderController)
   public func initTokenizeController(_ tokenizeController: core.ITokenizeController)
+  public func initSdkLicense(environmentLicensingData: core.EnvironmentLicensingData, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func externalTrackingEvent(trackingData: core.TrackingData) -> core.SdkResult<Swift.String>
+  public func setCustomerId(customerId: Swift.String) -> core.SdkResult<Swift.String>
+  public func closeSession() -> core.SdkResult<Swift.String>
   @objc deinit
 }
 extension sdk.SDKController : core.ISDKController {
@@ -29,24 +33,20 @@ extension sdk.SDKController : core.ISDKController {
   public func setupPhingers(data: core.PhingersConfigurationData)
   public func setupVideoCall(environmentVideoCallData: core.EnvironmentVideoCallData)
   public func setupVideoId(environmentVideoIdData: core.EnvironmentVideoIdData)
-  public func launchQrReader(setTracking: Swift.Bool, output: @escaping (core.SdkResult<Swift.String>) -> ())
-  public func launchNfcReader(setTracking: Swift.Bool, output: @escaping (core.SdkResult<core.NfcResult>) -> (), state: @escaping (core.NfcReadState) -> ())
-  public func launchSelphi(setTracking: Swift.Bool, output: @escaping (core.SdkResult<core.SelphiResult>) -> ())
-  public func launchSelphID(setTracking: Swift.Bool, output: @escaping (core.SdkResult<core.SelphIDResult>) -> ())
-  public func launchPhingers(setTracking: Swift.Bool, output: @escaping (core.SdkResult<core.PhingersResult>) -> ())
-  public func launchVideoCall(setTracking: Swift.Bool, output: @escaping (core.SdkResult<Swift.String>) -> ())
-  public func launchVideoId(setTracking: Swift.Bool, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func launchQrReader(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func launchNfcReader(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<core.NfcResult>) -> (), state: @escaping (core.NfcReadState) -> ())
+  public func launchSelphi(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<core.SelphiResult>) -> ())
+  public func launchSelphID(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<core.SelphIDResult>) -> ())
+  public func launchPhingers(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<core.PhingersResult>) -> ())
+  public func launchVideoCall(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func launchVideoId(setTracking: Swift.Bool = true, output: @escaping (core.SdkResult<Swift.String>) -> ())
   public func initOperation(steps: [core.Step]?) -> core.SdkResult<Swift.String>
   public func operationDeniedTrackingEvent()
   public func operationSuccessTrackingEvent()
   public func cancelReadNfcData()
   public func generateRawTemplate(base64: Swift.String) -> core.SdkResult<Foundation.Data>
   public func selphidTokenize(data: Swift.String) -> core.SdkResult<Swift.String>
-  public func getSelphidExtraData(trackingConfigurationData: core.TrackingConfigurationData) -> core.SdkResult<Swift.String>
+  public func getSelphidExtraData(trackingConfigurationData: core.TrackingConfigurationData, output: @escaping (core.SdkResult<Swift.String>) -> ())
   public func getExtraData(trackingConfigurationData: core.TrackingConfigurationData, output: @escaping (core.SdkResult<Swift.String>) -> ())
-  public func tokenizeFaceImage(image: Foundation.Data, output: @escaping (core.SdkResult<Swift.String>) -> ())
-  public func externalTrackingEvent(trackingData: core.TrackingData) -> core.SdkResult<Swift.String>
-  public func setCustomerId(customerId: Swift.String) -> core.SdkResult<Swift.String>
-  public func closeSession() -> core.SdkResult<Swift.String>
-  public func initSdkLicense(environmentLicensingData: core.EnvironmentLicensingData, output: @escaping (core.SdkResult<Swift.String>) -> ())
+  public func tokenizeFaceImage(image: Foundation.Data) -> core.SdkResult<Swift.String>
 }
