@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SDK-CorePackage-SPM",
+        "repositoryURL": "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git",
+        "state": {
+          "branch": null,
+          "revision": "6134c1c5fa01a4f584bfb43be8203fd51fed0299",
+          "version": "1.1.5"
+        }
+      },
+      {
+        "package": "SDK-LicenseCheckerPackage-SPM",
+        "repositoryURL": "git@github.com:facephi-clienters/SDK-LicenseCheckerPackage-SPM.git",
+        "state": {
+          "branch": null,
+          "revision": "875d45fb456e31a126cd10c1d1adaa6f4ba97a1d",
+          "version": "1.1.3"
+        }
+      },
+      {
+        "package": "SDK-LicensingPackage-SPM",
+        "repositoryURL": "git@github.com:facephi-clienters/SDK-LicensingPackage-SPM.git",
+        "state": {
+          "branch": null,
+          "revision": "811a1a9c5219949e5fc09c2c8a88ef900af5fbc7",
+          "version": "1.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
