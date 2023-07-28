@@ -1507,6 +1507,42 @@
           },
           {
             "kind": "Function",
+            "name": "tokenize",
+            "printedName": "tokenize(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SdkResult",
+                "printedName": "core.SdkResult<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:4core9SdkResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3sdk13SDKControllerC8tokenize4data4core9SdkResultCySSGSS_tF",
+            "mangledName": "$s3sdk13SDKControllerC8tokenize4data4core9SdkResultCySSGSS_tF",
+            "moduleName": "sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getTrackingController",
             "printedName": "getTrackingController()",
             "children": [
@@ -1588,7 +1624,7 @@
       "kind": "StringLiteral",
       "offset": 194,
       "length": 7,
-      "value": "\"1.4.0\""
+      "value": "\"1.4.3\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/SdkData.swift",
