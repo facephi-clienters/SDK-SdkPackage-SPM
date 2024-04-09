@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SDK-SdkPackage-SPM",
+    name: "sdk",
     platforms: [.iOS(.v9)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "SDK-SdkPackage-SPM",
+            name: "sdk",
             targets: ["SDK-SdkPackage-SPM", "sdk"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "SDK-CorePackage-SPM", url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", from: "1.5.8"),
-        .package(url: "git@github.com:facephi-clienters/SDK-LicensingPackage-SPM.git", from: "1.5.0")
+        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .upToNextMinor(from: "2.0.0"))
+        .package(url: "git@github.com:facephi-clienters/SDK-LicensingPackage-SPM.git", .upToNextMinor(from: "2.0.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -25,6 +25,5 @@ let package = Package(
             name: "SDK-SdkPackage-SPM",
             dependencies: ["SDK-CorePackage-SPM", "sdk", "SDK-LicensingPackage-SPM" ]),
         .binaryTarget(name: "sdk", path: "sdk.xcframework"),
-       
     ]
 )
