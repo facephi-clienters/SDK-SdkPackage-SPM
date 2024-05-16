@@ -46,6 +46,7 @@ public enum SdkMainError : Swift.String {
 }
 public enum Step : Swift.Equatable {
   case SELPHI_WIDGET
+  case SELPHIX_WIDGET
   case SELPHID_WIDGET
   case NFC_WIDGET
   case PHINGERS_WIDGET

@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+ // swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .upToNextMinor(from: "2.0.0")),
+        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .upToNextMinor(from: "2.0.0"))
         .package(url: "git@github.com:facephi-clienters/SDK-LicensingPackage-SPM.git", .upToNextMinor(from: "2.0.0"))
     ],
     targets: [
@@ -23,7 +23,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SDK-SdkPackage-SPM",
-            dependencies: ["SDK-CorePackage-SPM", "sdk", "SDK-LicensingPackage-SPM"]),
+            dependencies: ["SDK-CorePackage-SPM", "sdk", "SDK-LicensingPackage-SPM" ]),
         .binaryTarget(name: "sdk", path: "sdk.xcframework"),
     ]
 )

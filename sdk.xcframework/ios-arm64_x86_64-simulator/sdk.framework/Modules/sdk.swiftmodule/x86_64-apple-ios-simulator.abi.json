@@ -1037,6 +1037,43 @@
           },
           {
             "kind": "Var",
+            "name": "SELPHIX_WIDGET",
+            "printedName": "SELPHIX_WIDGET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(sdk.Step.Type) -> sdk.Step",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Step",
+                    "printedName": "sdk.Step",
+                    "usr": "s:3sdk4StepO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "sdk.Step.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Step",
+                        "printedName": "sdk.Step",
+                        "usr": "s:3sdk4StepO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:3sdk4StepO14SELPHIX_WIDGETyA2CmF",
+            "mangledName": "$s3sdk4StepO14SELPHIX_WIDGETyA2CmF",
+            "moduleName": "sdk"
+          },
+          {
+            "kind": "Var",
             "name": "SELPHID_WIDGET",
             "printedName": "SELPHID_WIDGET",
             "children": [
@@ -5568,7 +5605,7 @@
       "kind": "StringLiteral",
       "offset": 324,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.0.1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/Endpoints\/GetFlowEndpoint.swift",
@@ -5615,84 +5652,84 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 154,
+      "offset": 163,
       "length": 11,
       "value": "\"ExtraData\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 197,
       "length": 11,
       "value": "\"FaceImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 232,
+      "offset": 241,
       "length": 20,
       "value": "\"DocumentFrontImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 289,
+      "offset": 298,
       "length": 23,
       "value": "\"RawDocumentFrontImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 353,
       "length": 19,
       "value": "\"DocumentBackImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 408,
       "length": 22,
       "value": "\"RawDocumentBackImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 154,
+      "offset": 163,
       "length": 11,
       "value": "\"ExtraData\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 197,
       "length": 11,
       "value": "\"FaceImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 232,
+      "offset": 241,
       "length": 20,
       "value": "\"DocumentFrontImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 289,
+      "offset": 298,
       "length": 23,
       "value": "\"RawDocumentFrontImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 353,
       "length": 19,
       "value": "\"DocumentBackImage\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/TokenizerKeys.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 408,
       "length": 22,
       "value": "\"RawDocumentBackImage\""
     },
