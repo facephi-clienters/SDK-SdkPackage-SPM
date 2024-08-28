@@ -89,6 +89,68 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "libraryPackageVersion",
+            "printedName": "libraryPackageVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:3sdk9ConstantsO21libraryPackageVersionSSvpZ",
+            "mangledName": "$s3sdk9ConstantsO21libraryPackageVersionSSvpZ",
+            "moduleName": "sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:3sdk9ConstantsO21libraryPackageVersionSSvgZ",
+                "mangledName": "$s3sdk9ConstantsO21libraryPackageVersionSSvgZ",
+                "moduleName": "sdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:3sdk9ConstantsO",
+        "mangledName": "$s3sdk9ConstantsO",
+        "moduleName": "sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1565,6 +1627,23 @@
         "moduleName": "sdk"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "core",
+        "printedName": "core",
+        "declKind": "Import",
+        "moduleName": "sdk"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ExternalStepController",
         "printedName": "ExternalStepController",
@@ -2440,27 +2519,27 @@
           },
           {
             "kind": "Var",
-            "name": "customizationString",
-            "printedName": "customizationString",
+            "name": "customization",
+            "printedName": "customization",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "core.CommonCustomization?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "CommonCustomization",
+                    "printedName": "core.CommonCustomization",
+                    "usr": "s:4core19CommonCustomizationV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:3sdk22ExternalStepControllerC19customizationStringSSSgvp",
-            "mangledName": "$s3sdk22ExternalStepControllerC19customizationStringSSSgvp",
+            "usr": "s:3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvp",
+            "mangledName": "$s3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvp",
             "moduleName": "sdk",
             "declAttributes": [
               "AccessControl",
@@ -2476,21 +2555,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "core.CommonCustomization?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "CommonCustomization",
+                        "printedName": "core.CommonCustomization",
+                        "usr": "s:4core19CommonCustomizationV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3sdk22ExternalStepControllerC19customizationStringSSSgvg",
-                "mangledName": "$s3sdk22ExternalStepControllerC19customizationStringSSSgvg",
+                "usr": "s:3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvg",
+                "mangledName": "$s3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvg",
                 "moduleName": "sdk",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -2508,21 +2587,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "core.CommonCustomization?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "CommonCustomization",
+                        "printedName": "core.CommonCustomization",
+                        "usr": "s:4core19CommonCustomizationV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3sdk22ExternalStepControllerC19customizationStringSSSgvs",
-                "mangledName": "$s3sdk22ExternalStepControllerC19customizationStringSSSgvs",
+                "usr": "s:3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvs",
+                "mangledName": "$s3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvs",
                 "moduleName": "sdk",
                 "isFromExtension": true,
                 "accessorKind": "set"
@@ -2539,8 +2618,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:3sdk22ExternalStepControllerC19customizationStringSSSgvM",
-                "mangledName": "$s3sdk22ExternalStepControllerC19customizationStringSSSgvM",
+                "usr": "s:3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvM",
+                "mangledName": "$s3sdk22ExternalStepControllerC13customization4core19CommonCustomizationVSgvM",
                 "moduleName": "sdk",
                 "implicit": true,
                 "isFromExtension": true,
@@ -2593,10 +2672,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "ITrackMethodableController",
-            "printedName": "ITrackMethodableController",
-            "usr": "s:4core26ITrackMethodableControllerP",
-            "mangledName": "$s4core26ITrackMethodableControllerP"
+            "name": "ITrackableController",
+            "printedName": "ITrackableController",
+            "usr": "s:4core20ITrackableControllerP",
+            "mangledName": "$s4core20ITrackableControllerP"
           },
           {
             "kind": "Conformance",
@@ -2611,13 +2690,6 @@
             "printedName": "ICustomizableController",
             "usr": "s:4core23ICustomizableControllerP",
             "mangledName": "$s4core23ICustomizableControllerP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ITrackableController",
-            "printedName": "ITrackableController",
-            "usr": "s:4core20ITrackableControllerP",
-            "mangledName": "$s4core20ITrackableControllerP"
           },
           {
             "kind": "Conformance",
@@ -3840,13 +3912,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "ITrackMethodableController",
-            "printedName": "ITrackMethodableController",
-            "usr": "s:4core26ITrackMethodableControllerP",
-            "mangledName": "$s4core26ITrackMethodableControllerP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ITrackableController",
             "printedName": "ITrackableController",
             "usr": "s:4core20ITrackableControllerP",
@@ -3854,17 +3919,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "IMethodableController",
-            "printedName": "IMethodableController",
-            "usr": "s:4core21IMethodableControllerP",
-            "mangledName": "$s4core21IMethodableControllerP"
-          },
-          {
-            "kind": "Conformance",
             "name": "IBehaviorableController",
             "printedName": "IBehaviorableController",
             "usr": "s:4core23IBehaviorableControllerP",
             "mangledName": "$s4core23IBehaviorableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMethodableController",
+            "printedName": "IMethodableController",
+            "usr": "s:4core21IMethodableControllerP",
+            "mangledName": "$s4core21IMethodableControllerP"
           },
           {
             "kind": "Conformance",
@@ -3999,13 +4064,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "ITrackMethodableController",
-            "printedName": "ITrackMethodableController",
-            "usr": "s:4core26ITrackMethodableControllerP",
-            "mangledName": "$s4core26ITrackMethodableControllerP"
-          },
-          {
-            "kind": "Conformance",
             "name": "ITrackableController",
             "printedName": "ITrackableController",
             "usr": "s:4core20ITrackableControllerP",
@@ -4013,17 +4071,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "IMethodableController",
-            "printedName": "IMethodableController",
-            "usr": "s:4core21IMethodableControllerP",
-            "mangledName": "$s4core21IMethodableControllerP"
-          },
-          {
-            "kind": "Conformance",
             "name": "IBehaviorableController",
             "printedName": "IBehaviorableController",
             "usr": "s:4core23IBehaviorableControllerP",
             "mangledName": "$s4core23IBehaviorableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMethodableController",
+            "printedName": "IMethodableController",
+            "usr": "s:4core21IMethodableControllerP",
+            "mangledName": "$s4core21IMethodableControllerP"
           },
           {
             "kind": "Conformance",
@@ -4080,6 +4138,87 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(id:nameFlow:automatic:operation:steps:customization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowData",
+                "printedName": "sdk.FlowData",
+                "usr": "s:3sdk8FlowDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlowOperation",
+                "printedName": "sdk.FlowOperation",
+                "usr": "s:3sdk13FlowOperationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[sdk.FlowStep]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlowStep",
+                    "printedName": "sdk.FlowStep",
+                    "usr": "s:3sdk8FlowStepV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "core.CommonCustomization?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CommonCustomization",
+                    "printedName": "core.CommonCustomization",
+                    "usr": "s:4core19CommonCustomizationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3sdk8FlowDataV2id04nameB09automatic9operation5steps13customizationACSS_SSSbSgAA0B9OperationVSayAA0B4StepVG4core19CommonCustomizationVSgtcfc",
+            "mangledName": "$s3sdk8FlowDataV2id04nameB09automatic9operation5steps13customizationACSS_SSSbSgAA0B9OperationVSayAA0B4StepVG4core19CommonCustomizationVSgtcfc",
+            "moduleName": "sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -4129,6 +4268,53 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(operationType:enableTracking:start:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowOperation",
+                "printedName": "sdk.FlowOperation",
+                "usr": "s:3sdk13FlowOperationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3sdk13FlowOperationV13operationType14enableTracking5startACSS_SbSgSStcfc",
+            "mangledName": "$s3sdk13FlowOperationV13operationType14enableTracking5startACSS_SbSgSStcfc",
+            "moduleName": "sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -4175,6 +4361,57 @@
         "name": "FlowStep",
         "printedName": "FlowStep",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:key:nameStep:target:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowStep",
+                "printedName": "sdk.FlowStep",
+                "usr": "s:3sdk8FlowStepV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3sdk8FlowStepV2id3key04nameC06target4dataACSS_S4Stcfc",
+            "mangledName": "$s3sdk8FlowStepV2id3key04nameC06target4dataACSS_S4Stcfc",
+            "moduleName": "sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -4825,14 +5062,13 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ITrackMethodableController",
-                "printedName": "core.ITrackMethodableController",
-                "usr": "s:4core26ITrackMethodableControllerP"
+                "name": "ProtocolComposition",
+                "printedName": "core.IMethodableController & core.ITrackableController"
               }
             ],
             "declKind": "Func",
-            "usr": "s:3sdk13SDKControllerC6launch10controllery4core26ITrackMethodableController_p_tF",
-            "mangledName": "$s3sdk13SDKControllerC6launch10controllery4core26ITrackMethodableController_p_tF",
+            "usr": "s:3sdk13SDKControllerC6launch10controllery4core21IMethodableController_AF010ITrackableG0p_tF",
+            "mangledName": "$s3sdk13SDKControllerC6launch10controllery4core21IMethodableController_AF010ITrackableG0p_tF",
             "moduleName": "sdk",
             "declAttributes": [
               "AccessControl"
@@ -5448,13 +5684,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "SdkResult",
+                "printedName": "core.SdkResult<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:4core9SdkResultC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:3sdk13SDKControllerC12closeSessionyyF",
-            "mangledName": "$s3sdk13SDKControllerC12closeSessionyyF",
+            "usr": "s:3sdk13SDKControllerC12closeSession4core9SdkResultCySSGyF",
+            "mangledName": "$s3sdk13SDKControllerC12closeSession4core9SdkResultCySSGyF",
             "moduleName": "sdk",
             "declAttributes": [
               "AccessControl"
@@ -5582,30 +5827,30 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 144,
       "length": 17,
       "value": "\"com.facephi.sdk\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 190,
+      "offset": 197,
       "length": 28,
       "value": "\"com.facephi.flow_component\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 255,
+      "offset": 262,
       "length": 29,
       "value": "\"com.facephi.aiocr_component\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 338,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.1.1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/Endpoints\/GetFlowEndpoint.swift",
@@ -5771,35 +6016,35 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3593,
+      "offset": 3488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3617,
+      "offset": 3512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4608,
+      "offset": 4503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4632,
+      "offset": 4527,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7353,
+      "offset": 7248,
       "length": 4,
       "value": "true"
     }

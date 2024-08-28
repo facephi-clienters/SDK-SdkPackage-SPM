@@ -12,6 +12,9 @@ import licensingComponent
 @_hasMissingDesignatedInitializers public class AIOcrController {
   @objc deinit
 }
+public enum Constants {
+  public static let libraryPackageVersion: Swift.String
+}
 public struct FlowConfigurationData {
   public init(id: Swift.String, controllers: [core.IFlowableController], customerId: Swift.String? = nil)
 }
@@ -83,7 +86,7 @@ extension sdk.ExternalStepController : core.IFlowableController {
     get
     set(newValue)
   }
-  public var customizationString: Swift.String? {
+  public var customization: core.CommonCustomization? {
     get
     set(newValue)
   }
@@ -109,10 +112,12 @@ public class FlowController {
 extension sdk.FlowController : core.IFlowController {
   public func startNextController(result: core.SdkResult<Any>)
 }
-extension sdk.FlowController : core.ITrackMethodableController {
+extension sdk.FlowController : core.ITrackableController {
   public var trackingStep: Swift.String {
     get
   }
+}
+extension sdk.FlowController : core.IMethodableController {
 }
 @_inheritsConvenienceInitializers public class FlowPreviewController : sdk.FlowController {
   override public func start(operationController: core.IOperationableController)
@@ -120,12 +125,15 @@ extension sdk.FlowController : core.ITrackMethodableController {
   @objc deinit
 }
 public struct FlowData : Swift.Decodable {
+  public init(id: Swift.String, nameFlow: Swift.String, automatic: Swift.Bool?, operation: sdk.FlowOperation, steps: [sdk.FlowStep], customization: core.CommonCustomization?)
   public init(from decoder: Swift.Decoder) throws
 }
 public struct FlowOperation : Swift.Decodable {
+  public init(operationType: Swift.String, enableTracking: Swift.Bool?, start: Swift.String)
   public init(from decoder: Swift.Decoder) throws
 }
 public struct FlowStep : Swift.Decodable {
+  public init(id: Swift.String, key: Swift.String, nameStep: Swift.String, target: Swift.String, data: Swift.String)
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SdkFlowResult {
@@ -140,7 +148,7 @@ public class SDKController {
 }
 extension sdk.SDKController {
   public func launchMethod(controller: core.IMethodableController)
-  public func launch(controller: core.ITrackMethodableController)
+  public func launch(controller: core.IMethodableController & core.ITrackableController)
   public func initSdk(license: Swift.String, activateFlow: Swift.Bool = false, iaModels: Swift.Bool = false, output: @escaping (core.SdkResult<Swift.String>) -> (), trackingController: core.ITrackingController? = nil, tokenizeController: core.ITokenizeController? = nil, behaviorController: core.IBehaviorController? = nil, statusController: core.IStatusController? = nil)
   public func initSdk(licensingUrl: Foundation.URL, apiKey: Swift.String, activateFlow: Swift.Bool = false, iaModels: Swift.Bool = false, output: @escaping (core.SdkResult<Swift.String>) -> (), trackingController: core.ITrackingController? = nil, tokenizeController: core.ITokenizeController? = nil, behaviorController: core.IBehaviorController? = nil, statusController: core.IStatusController? = nil)
   public func newOperation(operationType: sdk.OperationType, customerId: Swift.String?, steps: [sdk.Step]? = nil, output: @escaping (core.SdkResult<Swift.String>) -> (), enableTracking: Swift.Bool = true)
@@ -153,7 +161,7 @@ extension sdk.SDKController {
   public func setCustomerId(customerId: Swift.String)
   public func setupTrackingError(trackingError: @escaping (Swift.String) -> Swift.Void)
   public func askForLocationPermission()
-  public func closeSession()
+  public func closeSession() -> core.SdkResult<Swift.String>
   public func getExtraData() -> core.SdkResult<Swift.String>
   public func tokenize(data: Swift.String) -> core.SdkResult<Swift.String>
   public func getTrackingController() -> core.ITrackingController?
