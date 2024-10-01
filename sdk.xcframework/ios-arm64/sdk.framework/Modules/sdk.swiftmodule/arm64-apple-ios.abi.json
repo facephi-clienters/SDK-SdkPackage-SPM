@@ -5340,12 +5340,27 @@
           {
             "kind": "Function",
             "name": "newOperation",
-            "printedName": "newOperation(operationType:customerId:steps:output:enableTracking:)",
+            "printedName": "newOperation(operationId:operationType:customerId:steps:output:enableTracking:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5425,8 +5440,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:3sdk13SDKControllerC12newOperation13operationType10customerId5steps6output14enableTrackingyAA0dF0O_SSSgSayAA4StepOGSgy4core9SdkResultCySSGcSbtF",
-            "mangledName": "$s3sdk13SDKControllerC12newOperation13operationType10customerId5steps6output14enableTrackingyAA0dF0O_SSSgSayAA4StepOGSgy4core9SdkResultCySSGcSbtF",
+            "usr": "s:3sdk13SDKControllerC12newOperation11operationId0E4Type08customerF05steps6output14enableTrackingySSSg_AA0dG0OAKSayAA4StepOGSgy4core9SdkResultCySSGcSbtF",
+            "mangledName": "$s3sdk13SDKControllerC12newOperation11operationId0E4Type08customerF05steps6output14enableTrackingySSSg_AA0dG0OAKSayAA4StepOGSgy4core9SdkResultCySSGcSbtF",
             "moduleName": "sdk",
             "declAttributes": [
               "AccessControl",
@@ -5850,7 +5865,7 @@
       "kind": "StringLiteral",
       "offset": 338,
       "length": 7,
-      "value": "\"2.1.1\""
+      "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Data\/Endpoints\/GetFlowEndpoint.swift",
@@ -6016,35 +6031,35 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3488,
+      "offset": 3538,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3512,
+      "offset": 3562,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4503,
+      "offset": 4553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4527,
+      "offset": 4577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/SDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7248,
+      "offset": 7326,
       "length": 4,
       "value": "true"
     }
