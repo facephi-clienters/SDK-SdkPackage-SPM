@@ -124,6 +124,11 @@ extension sdk.FlowController : core.IMethodableController {
   override public init(flowConfigurationData: sdk.FlowConfigurationData, output: @escaping (sdk.SdkFlowResult) -> Swift.Void)
   @objc deinit
 }
+@_inheritsConvenienceInitializers public class FlowOfflineController : sdk.FlowController {
+  override public func start(operationController: core.IOperationableController)
+  override public init(flowConfigurationData: sdk.FlowConfigurationData, output: @escaping (sdk.SdkFlowResult) -> Swift.Void)
+  @objc deinit
+}
 public struct FlowData : Swift.Decodable {
   public init(id: Swift.String, nameFlow: Swift.String, automatic: Swift.Bool?, operation: sdk.FlowOperation, steps: [sdk.FlowStep], customization: core.CommonCustomization?)
   public init(from decoder: Swift.Decoder) throws
@@ -159,7 +164,6 @@ extension sdk.SDKController {
   public func getCustomerId() -> Swift.String
   public func getOperationType() -> sdk.OperationType
   public func setCustomerId(customerId: Swift.String)
-  public func setupTrackingError(trackingError: @escaping (Swift.String) -> Swift.Void)
   public func askForLocationPermission()
   public func closeSession() -> core.SdkResult<Swift.String>
   public func getExtraData() -> core.SdkResult<Swift.String>

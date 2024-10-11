@@ -4047,6 +4047,159 @@
         "mangledName": "$s3sdk21FlowPreviewControllerC",
         "moduleName": "sdk",
         "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:3sdk14FlowControllerC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "sdk.FlowController"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IFlowController",
+            "printedName": "IFlowController",
+            "usr": "s:4core15IFlowControllerP",
+            "mangledName": "$s4core15IFlowControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ITrackableController",
+            "printedName": "ITrackableController",
+            "usr": "s:4core20ITrackableControllerP",
+            "mangledName": "$s4core20ITrackableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IBehaviorableController",
+            "printedName": "IBehaviorableController",
+            "usr": "s:4core23IBehaviorableControllerP",
+            "mangledName": "$s4core23IBehaviorableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IMethodableController",
+            "printedName": "IMethodableController",
+            "usr": "s:4core21IMethodableControllerP",
+            "mangledName": "$s4core21IMethodableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ILicensableController",
+            "printedName": "ILicensableController",
+            "usr": "s:4core21ILicensableControllerP",
+            "mangledName": "$s4core21ILicensableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IStartableController",
+            "printedName": "IStartableController",
+            "usr": "s:4core20IStartableControllerP",
+            "mangledName": "$s4core20IStartableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ITokenizableController",
+            "printedName": "ITokenizableController",
+            "usr": "s:4core22ITokenizableControllerP",
+            "mangledName": "$s4core22ITokenizableControllerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "IStatusableController",
+            "printedName": "IStatusableController",
+            "usr": "s:4core21IStatusableControllerP",
+            "mangledName": "$s4core21IStatusableControllerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FlowOfflineController",
+        "printedName": "FlowOfflineController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(operationController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IOperationableController",
+                "printedName": "core.IOperationableController",
+                "usr": "s:4core24IOperationableControllerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:3sdk21FlowOfflineControllerC5start09operationD0y4core014IOperationableD0_p_tF",
+            "mangledName": "$s3sdk21FlowOfflineControllerC5start09operationD0y4core014IOperationableD0_p_tF",
+            "moduleName": "sdk",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(flowConfigurationData:output:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlowOfflineController",
+                "printedName": "sdk.FlowOfflineController",
+                "usr": "s:3sdk21FlowOfflineControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlowConfigurationData",
+                "printedName": "sdk.FlowConfigurationData",
+                "usr": "s:3sdk21FlowConfigurationDataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(sdk.SdkFlowResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SdkFlowResult",
+                    "printedName": "sdk.SdkFlowResult",
+                    "usr": "s:3sdk13SdkFlowResultV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:3sdk21FlowOfflineControllerC21flowConfigurationData6outputAcA0bfG0V_yAA03SdkB6ResultVctcfc",
+            "mangledName": "$s3sdk21FlowOfflineControllerC21flowConfigurationData6outputAcA0bfG0V_yAA03SdkB6ResultVctcfc",
+            "moduleName": "sdk",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:3sdk21FlowOfflineControllerC",
+        "mangledName": "$s3sdk21FlowOfflineControllerC",
+        "moduleName": "sdk",
+        "declAttributes": [
           "AccessControl"
         ],
         "superclassUsr": "s:3sdk14FlowControllerC",
@@ -5634,45 +5787,6 @@
           },
           {
             "kind": "Function",
-            "name": "setupTrackingError",
-            "printedName": "setupTrackingError(trackingError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:3sdk13SDKControllerC18setupTrackingError08trackingE0yySSc_tF",
-            "mangledName": "$s3sdk13SDKControllerC18setupTrackingError08trackingE0yySSc_tF",
-            "moduleName": "sdk",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "askForLocationPermission",
             "printedName": "askForLocationPermission()",
             "children": [
@@ -6017,7 +6131,7 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner\/_work\/SDK-Sdk-SPM\/SDK-Sdk-SPM\/Sources\/sdk\/Flow\/FlowController.swift",
       "kind": "Array",
-      "offset": 821,
+      "offset": 825,
       "length": 2,
       "value": "[]"
     },
