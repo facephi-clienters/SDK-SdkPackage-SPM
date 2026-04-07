@@ -1,0 +1,30 @@
+ // swift-tools-version:5.5
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "sdk",
+    platforms: [.iOS(.v9)],
+    products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
+        .library(
+            name: "sdk",
+            targets: ["SDK-SdkPackage-SPM", "sdk"]),
+    ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.7.0")),
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        .target(
+            name: "SDK-SdkPackage-SPM",
+            dependencies: ["SDK-CorePackage-SPM", "sdk"]),
+        .binaryTarget(name: "sdk",
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKMainComponent/2.7.0/sdk.zip",
+        checksum: "8f6352061b1d2d61f2aa6b6de6bb5bed1c1d44f2430553959fbe3e4911a544e7"),
+    ]
+)
