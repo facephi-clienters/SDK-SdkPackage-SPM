@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.7.0")),
+        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.8.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -24,7 +24,7 @@ let package = Package(
             name: "SDK-SdkPackage-SPM",
             dependencies: ["SDK-CorePackage-SPM", "sdk"]),
         .binaryTarget(name: "sdk",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKMainComponent/2.7.0/sdk.zip",
-        checksum: "8f6352061b1d2d61f2aa6b6de6bb5bed1c1d44f2430553959fbe3e4911a544e7"),
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKMainComponent/2.8.0/sdk.zip",
+        checksum: "8f17fb5413f41a31515ad08dcefb15926df0975e048b6b5ae71efb677fd98294"),
     ]
 )
