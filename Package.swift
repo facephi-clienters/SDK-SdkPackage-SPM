@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "sdk",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v12)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.11.0")),
+        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.12.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -24,7 +24,7 @@ let package = Package(
             name: "SDK-SdkPackage-SPM",
             dependencies: ["SDK-CorePackage-SPM", "sdk"]),
         .binaryTarget(name: "sdk",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKMainComponent/2.11.0/sdk.zip",
-        checksum: "0e24ec5fe9d561855f98c81d0d5706ac82ec1205d7dd0d5345e85dd5d39e77d2"),
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKMainComponent/2.12.0/sdk.zip",
+        checksum: "6f3cb0c392a5c74407a1e0127f43808e0f1b230806decff9a5b3959a9e8c343a"),
     ]
 )
